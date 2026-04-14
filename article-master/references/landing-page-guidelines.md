@@ -148,7 +148,7 @@ In order of effectiveness:
 - Value props: stack vertically, not horizontally
 - Product grid: 1 column on mobile
 - Font: minimum 16px body, 28px+ headline
-- Touch targets: minimum 44px height (per spatial-design.md)
+- Touch targets: minimum 44px height
 - Sticky CTA bar at bottom (optional but effective)
 
 ### Multi-language Landing Pages

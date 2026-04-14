@@ -231,7 +231,7 @@ For every image in the article:
 | Section 1 | [describes information, not the image] | |
 | Section 2 | [describes information] | |
 
-Rules (from design/impeccable UX writing):
+Rules:
 - Describe the information, not the image
 - Include keyword in 1 image alt (naturally)
 - Use `alt=""` for decorative images only
@@ -246,7 +246,6 @@ If the article should be translated (check BRAND.md → Identity → Languages):
 | <!-- primary language --> | /blog/[slug]/ | This article | Primary |
 | <!-- language 2 --> | /[lang]/blog/[slug]/ | To translate | <!-- priority --> |
 | <!-- language 3 --> | /[lang]/blog/[slug]/ | To translate | <!-- priority --> |
-| Japanese | /jp/blog/[slug]/ | To translate | Low |
 
 Add hreflang tags for all language versions.
 

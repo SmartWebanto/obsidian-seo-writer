@@ -70,7 +70,9 @@ Also extract SERP features present:
 
 For the top 3-5 ranking URLs, extract the full heading structure.
 
-Use `mcp__dfs__on_page_content_parsing` or `python3 seo/scripts/fetch_page.py` + `python3 seo/scripts/parse_html.py`.
+**With DataForSEO:** Use `mcp__dfs__on_page_content_parsing` to fetch and parse page content.
+
+**Without DataForSEO (fallback):** Open each competitor URL directly (WebFetch or browser), then extract the heading structure (H1/H2/H3) from the HTML.
 
 **Output:**
 ```markdown
