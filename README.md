@@ -59,9 +59,15 @@ This vault flips that. You build a **context layer** once — brand identity, au
 ├── research/                  Output: research notes
 ├── content/                   Output: drafts and finals
 ├── briefs/                    Output: Obsidian brief notes
+├── findings/                  Output: validation results (JSON)
 ├── .obsidian/                 Minimal config (dataview plugin)
-└── .claude/commands/
-    └── onboard.md             Interactive setup wizard
+├── CLAUDE.md                  Project context for Claude Code
+└── .claude/commands/          Slash commands
+    ├── article-master.md      /article-master <keyword>
+    ├── article-research.md    /article-research <keyword>
+    ├── article-write.md       /article-write
+    ├── article-finalize.md    /article-finalize
+    └── onboard.md             /onboard setup wizard
 ```
 
 ## Multi-Client Setup
@@ -84,7 +90,7 @@ git clone <this-repo> my-brand
 cd my-brand
 ```
 
-Open the folder as a vault in Obsidian. Install the [Dataview](https://github.com/blackfool/obsidian-dataview) community plugin when prompted.
+Open the folder as a vault in Obsidian. Install the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) community plugin when prompted.
 
 ### 2. Set up your workspace
 
@@ -175,6 +181,7 @@ You can also run phases individually:
 | Draft | `content/article-<slug>-draft.md` | Article draft with frontmatter |
 | Final | `content/article-<slug>-final.md` | Production-ready article |
 | Brief | `briefs/article-<slug>.md` | Obsidian note with wikilinks to workspace |
+| Findings | `findings/article-<slug>-YYYY-MM-DD.json` | Validation results from Step 11 |
 
 Each file is self-contained — no in-memory dependency between phases. You can run research today and write tomorrow.
 

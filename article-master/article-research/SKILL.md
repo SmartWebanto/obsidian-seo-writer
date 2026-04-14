@@ -22,7 +22,9 @@ Analyze the SERP landscape for a keyword and produce a comprehensive research do
 
 ## Step 1: SERP — Top 10 Competitor Analysis
 
-Call `mcp__dfs__serp_organic_live_advanced` with depth: 10 for the target keyword.
+**With DataForSEO:** Call `mcp__dfs__serp_organic_live_advanced` with depth: 10 for the target keyword.
+
+**Without DataForSEO (fallback):** Use web search to find the top 10 ranking pages for the keyword. Open each URL and extract the data manually. This is slower but produces the same output.
 
 For each of the top 10 results, extract:
 
@@ -157,7 +159,9 @@ For the top 3 competitors, analyze content quality:
 
 Build the semantic context around the keyword.
 
-Call `mcp__dfs__dataforseo_labs_google_related_keywords` and `mcp__dfs__dataforseo_labs_google_keyword_suggestions`.
+**With DataForSEO:** Call `mcp__dfs__dataforseo_labs_google_related_keywords` and `mcp__dfs__dataforseo_labs_google_keyword_suggestions`.
+
+**Without DataForSEO (fallback):** Use Google autocomplete suggestions, "People Also Ask" from Step 1, and "Related searches" at the bottom of SERP results. For volume/KD estimates, use any free keyword tool or skip — the semantic map is still valuable without exact numbers.
 
 **Output:**
 ```markdown
