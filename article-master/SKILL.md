@@ -16,10 +16,10 @@ End-to-end SEO content pipeline in 12 steps, split into 3 phases with review pau
 ## Usage
 
 ```
-/article-master "alpaca vs cashmere"              → blog (default), with pauses
-/article-master "alpaca vs cashmere" --landing     → landing page, with pauses
-/article-master "alpaca vs cashmere" --auto        → full pipeline, no pauses
-/article-research "alpaca vs cashmere"             → only phase 1 (analysis)
+/article-master "your keyword"                    → blog (default), with pauses
+/article-master "your keyword" --landing           → landing page, with pauses
+/article-master "your keyword" --auto              → full pipeline, no pauses
+/article-research "your keyword"                   → only phase 1 (analysis)
 /article-write                                     → only phase 2 (reads research from disk)
 /article-finalize                                  → only phase 3 (reads draft from disk)
 ```
