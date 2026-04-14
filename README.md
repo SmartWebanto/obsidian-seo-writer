@@ -33,6 +33,24 @@ This vault flips that. You build a **context layer** once — brand identity, au
 └──────────────────────────────────────────────────────────┘
 ```
 
+## Why Not Just Prompt Directly?
+
+| | "Write an article about X" | This vault: `/article-master "X"` |
+|---|---|---|
+| **Tone** | Generic | Your brand voice (from TOV.md) |
+| **Structure** | AI decides | SERP-driven: what's actually ranking |
+| **Keywords** | Guessed | Real data: volume, difficulty, intent |
+| **Cannibalization** | No check | Checked against your existing content |
+| **Brand rules** | None | "Do NOT" list, words to avoid |
+| **Pillar alignment** | None | Maps to your content strategy |
+| **Validation** | Hope for the best | 30+ automated checks |
+| **Consistency** | Every article is different | Every article shares the same context |
+| **Memory** | Starts from zero each time | Learns from past articles (LEARNINGS.md) |
+
+The difference compounds. Article #1 is slightly better. Article #20 is in a different league — because the context layer grows with every piece you publish.
+
+> See a complete example with a fictional brand in the [`example/`](example/) directory.
+
 ## Vault Structure
 
 ```
